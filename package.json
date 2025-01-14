@@ -1,0 +1,15 @@
+{
+  "name": "wineep.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "Dom Chester",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/eleventy --serve",
+    "build": "./node_modules/.bin/eleventy"
+  }
+}
