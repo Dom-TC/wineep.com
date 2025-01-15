@@ -2,4 +2,24 @@
 layout: base
 ---
 
-{{ content | safe }}
+<h1>{{ wine_name }}</h1>
+<div>
+    <p>Suggested by {{ host_name }} for the {{ wineclub_date | getMonthYear }} wine club.</p>
+    <p>View this post on the <a href="{{ discord_link }}">Discord</a></p>
+</div>
+
+<div>
+    {{ content | safe }}
+</div>
+
+<div>
+    {% for category, urls in store_links %}
+    <h2>{{ category | upper }}</h2>
+    <ul>
+        {% for url in urls %}
+            <li><a href="{{ url }}">{{ url }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+    
+</div>
