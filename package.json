@@ -5,6 +5,7 @@
   "main": "index.html",
   "author": "Dom Chester",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"
   },
