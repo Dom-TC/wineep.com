@@ -7,14 +7,22 @@
  */
 
 import collections from './src/_config/collections.js';
-import filters from './src/_config/filters.js';
+import dateFilters from './src/_config/filters/date.js';
+import generalFilters from './src/_config/filters/general.js';
+
 
 export default async function (eleventyConfig) {
     // Collections
     eleventyConfig.addCollection('wineClubPosts', collections.getWineClubPosts);
 
     // Filters
-    eleventyConfig.addFilter('stripIndex', filters.stripIndex)
+    Object.keys(generalFilters).forEach(filterName => {
+        eleventyConfig.addFilter(filterName, generalFilters[filterName])
+    })
+
+    Object.keys(dateFilters).forEach(filterName => {
+        eleventyConfig.addFilter(filterName, dateFilters[filterName])
+    })
 
     // General Config
     return {
