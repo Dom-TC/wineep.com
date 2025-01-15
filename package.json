@@ -10,7 +10,7 @@
     "@11ty/eleventy": "^3.0.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/eleventy --serve",
+    "start": "./node_modules/.bin/eleventy --serve --quiet",
     "build": "./node_modules/.bin/eleventy"
   }
 }
