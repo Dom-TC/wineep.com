@@ -10,10 +10,14 @@ import collections from './src/_config/collections.js';
 import dateFilters from './src/_config/filters/date.js';
 import generalFilters from './src/_config/filters/general.js';
 
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default async function (eleventyConfig) {
     // Collections
     eleventyConfig.addCollection('wineClubPosts', collections.getWineClubPosts);
+
+    // Plugins
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
     // Filters
     Object.keys(generalFilters).forEach(filterName => {
