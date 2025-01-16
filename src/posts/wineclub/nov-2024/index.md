@@ -9,11 +9,24 @@ host_name: Walker
 host_discord_id: 489893753935495171
 discord_link: https://discord.com/channels/1106965514774913114/1106970706606043218/1296171976389296209
 store_links:
-    uk: 
-        - https://abc.com
-        - https://def.com
-    hk: 
-        - https://ghi.com
+    UK: 
+        2015: https://www.seckfordwines.co.uk/displayitemdetails/UOM/1074370_1074370_0.75%20L
+        2016: https://www.laywheeler.com/product-detail?id=3316687A
+        2018: https://callmewine.co.uk/carema-etichetta-bianca-produttori-di-carema-2018-P37920.htm
+    EU: 
+        2017: http://www.garofalowine.it/frameInterna.asp?IDCAT=43&SELPAG=2&FORNITORE=CANTINA+PRODUTTORI+DI+CAREMA+&REGIONE=2&NAZIONE=&annata=
+        2018: https://50second-finish.de/produkt/produttori-nebbiolo-di-carema-carema-riserva-2018/
+    US:
+        2017: https://www.winedeals.com/wine/red-wine/nebbiolo/carema-riserva-2017-750-ml-96708.html
+        2018: https://www.empirewine.com/wine/produttori-di-carema-carema-riserva-2018-h58215/
+    HK:
+        2015: https://www.vynluna.com/piedmont/cantina-dei-produttori-nebbiolo-di-carema-etichetta-bianca-carema-riserva-2015-bt
+        2016: https://www.vynluna.com/piedmont/cantina-dei-produttori-nebbiolo-di-carema-etichetta-bianca-carema-riserva-2016-bt
+    AU:
+        2018: https://winedecoded.com.au/product/produttori-di-carema-riserva-carema-doc-nebbiolo-2018/
+        2019: https://winedecoded.com.au/product/produttori-di-carema-riserva-carema-doc-nebbiolo-2019/
+    JP:
+        2018: https://www.vino-tastevin.co.jp/shopdetail/000000003142/004/X/page3/order/
 ---
 
 Apologies for the early announcement with regards to November wine club pick, but liquidity in some markets looks thin and really wanted to give everyone the chance to try this wine.
