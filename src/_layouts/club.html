@@ -13,13 +13,19 @@ layout: base
 </div>
 
 <div>
-    {% for category, urls in store_links %}
-    <h2>{{ category | upper }}</h2>
-    <ul>
-        {% for url in urls %}
-            <li><a href="{{ url }}">{{ url }}</a></li>
-        {% endfor %}
-    </ul>
-    {% endfor %}
-    
+    <h2>Store Links</h2>
+    {%- for country, years in store_links -%}
+        <h3>{{ country | upper }}</h3>
+        <ul>
+            {%- for year, url in years -%}
+                {%- if url | isArray -%}
+                    {%- for u in url -%}
+                    <li><a href="{{ u }}" target="_blank">{{ year }} - {{ u | baseDomain }}</a></li>
+                    {%- endfor -%}
+                {%- else -%}
+                    <li><a href="{{ url }}" target="_blank">{{ year }} - {{ url | baseDomain }}</a></li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+    {%- endfor -%}
 </div>
